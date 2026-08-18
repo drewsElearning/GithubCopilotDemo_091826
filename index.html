@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Stay extraordinary at The Pecos House, a lovingly overconfident Texas hotel company." />
+  <title>The Pecos House | Texas, but make it five-star</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="The Pecos House home">
+      <span class="brand-mark">P</span>
+      <span class="brand-name">THE PECOS HOUSE<small>Hotels &amp; other tall tales</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#stays">Stays</a>
+      <a href="#story">Our story</a>
+      <a href="#journal">The journal</a>
+    </nav>
+    <button class="outline-button" data-scroll="#stays">Find your stay <span>↗</span></button>
+    <button class="menu-button" aria-label="Open navigation">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Made for the curious · Texas, USA</p>
+        <h1>Stay<br /><em>extraordinary.</em></h1>
+        <p class="hero-lede">Hotels with big skies, small details, and just enough swagger. Come for the room. Stay for the story.</p>
+        <button class="primary-button" data-scroll="#stays">Explore our rooms <span>↓</span></button>
+      </div>
+      <div class="hero-photo">
+        <div class="hero-image"></div>
+        <div class="photo-caption"><span>01 — MARFA, TX</span><span>Casa del Sol / Suite 204</span></div>
+      </div>
+      <div class="hero-badge">EST.<br /><strong>2014</strong><br />WEST TEXAS</div>
+    </section>
+
+    <section class="intro-band" id="story">
+      <p class="eyebrow">A little context</p>
+      <div class="intro-content">
+        <h2>Texas hospitality,<br /><em>with the volume up.</em></h2>
+        <p>We find the overlooked corners, bring in the good linens, and leave the door unlocked for a little wonder. From a desert casita to a downtown hideaway, every Pecos House has its own particular kind of magic.</p>
+        <a href="#journal" class="text-link">Read our story <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="stays-section" id="stays">
+      <div class="section-heading">
+        <div><p class="eyebrow">Choose your own adventure</p><h2>Rooms for<br /><em>every kind of night.</em></h2></div>
+        <div class="stay-controls" role="group" aria-label="Filter rooms by price">
+          <button class="filter-button active" data-filter="all">All rooms</button>
+          <button class="filter-button" data-filter="under">Under $200</button>
+          <button class="filter-button" data-filter="over">The good stuff</button>
+        </div>
+      </div>
+      <div class="room-grid">
+        <article class="room-card" data-price="under">
+          <div class="room-photo photo-one"><span class="room-tag">Most loved</span><button class="heart" aria-label="Save Desert Double">♡</button></div>
+          <div class="room-info"><div><p class="room-type">The Desert Double</p><p class="room-location">Casa del Sol · Marfa, TX</p></div><div class="room-price"><strong>$149</strong><span>/ night</span></div></div>
+          <div class="room-foot"><span>2 guests · 1 king bed</span><button class="arrow-button" data-room="The Desert Double">↗</button></div>
+        </article>
+        <article class="room-card" data-price="over">
+          <div class="room-photo photo-two"><button class="heart" aria-label="Save Bluebonnet Suite">♡</button></div>
+          <div class="room-info"><div><p class="room-type">The Bluebonnet Suite</p><p class="room-location">The Chisholm · Fort Worth, TX</p></div><div class="room-price"><strong>$289</strong><span>/ night</span></div></div>
+          <div class="room-foot"><span>2 guests · 1 king bed</span><button class="arrow-button" data-room="The Bluebonnet Suite">↗</button></div>
+        </article>
+        <article class="room-card" data-price="over">
+          <div class="room-photo photo-three"><span class="room-tag">New arrival</span><button class="heart" aria-label="Save Pecos Penthouse">♡</button></div>
+          <div class="room-info"><div><p class="room-type">The Pecos Penthouse</p><p class="room-location">The Highball · Austin, TX</p></div><div class="room-price"><strong>$475</strong><span>/ night</span></div></div>
+          <div class="room-foot"><span>4 guests · 2 king beds</span><button class="arrow-button" data-room="The Pecos Penthouse">↗</button></div>
+        </article>
+      </div>
+      <div class="view-all"><a href="#stays" class="text-link">View all stays <span>→</span></a><span class="stay-count">03 / 12</span></div>
+    </section>
+
+    <section class="quote-section" id="journal">
+      <div class="quote-image"></div>
+      <div class="quote-copy"><span class="quote-mark">“</span><blockquote>A room should make you feel like the best version of yourself. Or at least like someone who knows where the good mezcal is.</blockquote><p>— JUNE PECOS, FOUNDER &amp; PROFESSIONAL HOST</p></div>
+    </section>
+
+    <section class="newsletter"><p class="eyebrow">Keep in touch</p><div><h2>Good things,<br /><em>occasionally.</em></h2><form id="signup-form"><input type="email" placeholder="Your email address" aria-label="Your email address" required /><button class="primary-button" type="submit">Sign me up <span>↗</span></button></form><p class="form-note" aria-live="polite">No spam. Just the good kind of news.</p></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">P</span><span class="brand-name">THE PECOS HOUSE<small>Hotels &amp; other tall tales</small></span></a><div class="footer-links"><a href="#stays">Instagram</a><a href="#story">Contact</a><a href="#journal">Press</a></div><p>© 2024 The Pecos House</p></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
